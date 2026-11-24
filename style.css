@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 16px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5c8a;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: .95rem;
+}
+
+nav a:hover {
+  color: #ff5c8a;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1600&q=80') center/cover;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: #eee;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 22px;
+  background: #ff5c8a;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 65px 8%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #111;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.category {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+
+.category img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.category h3 {
+  padding: 14px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.product {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+}
+
+.product img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 16px;
+}
+
+.product-info h3 {
+  font-size: 1.05rem;
+}
+
+.price {
+  color: #ff5c8a;
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin: 6px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: .9rem;
+  margin-left: 8px;
+}
+
+.offer {
+  background: #ff5c8a;
+  color: #fff;
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.featured {
+  background: #111;
+  color: #fff;
+}
+
+.featured h2 {
+  color: #ff5c8a;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.collection {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.collection img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.collection-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,.85));
+}
+
+.collection-text h3 {
+  font-size: 1.3rem;
+}
+
+.shop {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+
+.shop h2 {
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 22px;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  section {
+    padding: 45px 6%;
+  }
+}
